@@ -18,6 +18,7 @@
     window.addEventListener("load", (event) => {
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
+        player.config.autoplay = "on";
         const container = document.getElementById("container");
         container.appendChild(player);
         player.load("splash.swf");
