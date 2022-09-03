@@ -20,6 +20,9 @@
         const player = ruffle.createPlayer();
         player.config.autoplay = "on";
         player.config.unmuteOverlay = "hidden";
+        player.config.letterbox = "on";
+        player.config.contextMenu = false;
+        player.config.preloader = false;
         player.style.width = "800px";
         player.style.height = "600px";
         const container = document.getElementById("container");
