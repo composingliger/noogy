@@ -19,6 +19,7 @@
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
         player.config.autoplay = "on";
+        player.config.unmuteOverlay = "off";
         player.style.width = "800px";
         player.style.height = "600px";
         const container = document.getElementById("container");
